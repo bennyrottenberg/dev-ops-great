@@ -31,7 +31,7 @@ pipeline {
             if(commit_type == 'merge')
             {
                 echo "commit_type is: $commit_type, trigger python job."
-                build 'DevOps_is_great'
+                build 'DevOps-is-great'
             }
             else
             {
