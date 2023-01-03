@@ -1,0 +1,12 @@
+Started on Jan 3, 2023, 10:48:59 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 1aa139c61d5abe1798147585425311ec2b1e38e6 (refs/remotes/origin/main)
+The recommended git tool is: git
+Warning: CredentialId "git_token" could not be found.
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote -h -- https://github.com/bennyrottenberg/GreatDevOps # timeout=10
+Found 3 remote heads on https://github.com/bennyrottenberg/GreatDevOps
+[poll] Latest remote head revision on refs/heads/main is: c275b4ed22cee4558b496ddd6174e17be741e337
+Done. Took 0.72 sec
+Changes found
