@@ -16,7 +16,7 @@ pipeline {
         checkout scm: [$class: 'GitSCM',
           userRemoteConfigs: [[url: 'https://github.com/bennyrottenberg/dev-ops-great',
                               credentialsId: 'git_token']],
-                              branches: [[name: 'refs/heads/main']]
+                              branches: [[name: 'refs/heads/clean-jenkins']]
         ], poll: true
        
       }
@@ -24,7 +24,7 @@ pipeline {
     stage('build python job') {
       steps {
         script{
-          
+
             commit_type = sh returnStdout: true, script: """git rev-parse HEAD^2 >/dev/null 2>/dev/null && echo "merge" || echo "regular commit" """
             commit_type = commit_type.trim()
             
