@@ -16,7 +16,7 @@ pipeline {
         checkout scm: [$class: 'GitSCM',
           userRemoteConfigs: [[url: 'https://github.com/bennyrottenberg/dev-ops-great',
                               credentialsId: 'git_token']],
-                              branches: [[name: 'refs/heads/clean-jenkins']]
+                              branches: [[name: 'refs/heads/main']]
         ], poll: true
        
       }
