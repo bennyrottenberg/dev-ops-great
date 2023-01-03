@@ -14,7 +14,7 @@ pipeline {
     stage('checkout') {
       steps {
         checkout scm: [$class: 'GitSCM',
-          userRemoteConfigs: [[url: 'https://github.com/bennyrottenberg/GreatDevOps',
+          userRemoteConfigs: [[url: 'https://github.com/bennyrottenberg/dev-ops-great',
                               credentialsId: 'git_token']],
                               branches: [[name: 'refs/heads/main']]
         ], poll: true
