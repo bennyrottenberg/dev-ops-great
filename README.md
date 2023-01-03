@@ -14,7 +14,7 @@ Run "sh start_system. sh" and you ready to go.
 You may need sudo permission.
 
 jenkins user/pswd
-admin/51a1e647ef094490b850687ddb15c03a  (in deployment it will be secret ... :) )
+admin/51a1e647ef094490b850687ddb15c03a  (in deployment it will be secret ... :) ).
 
 notes:
 I separate the "Jenkins system and configuration files" to the different git repository, to make it easy to maintain,
