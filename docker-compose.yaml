@@ -2,7 +2,7 @@
 version: '3.8'
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    image: jenkins/jenkins:${JENKINS_TAG}
     privileged: true
     user: root
     ports:
@@ -13,7 +13,7 @@ services:
       - ../jenkins_configuration:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
   agent:
-    image: aurora/ssh-agent-python
+    image: "aurora/${AGENT_NAME}:${AGENT_TAG}"
     privileged: true
     user: root
     container_name: agent
