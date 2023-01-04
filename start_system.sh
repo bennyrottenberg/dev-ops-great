@@ -6,7 +6,6 @@ else
     echo "AGENT_TAG=latest" >> .env
     echo "JENKINS_TAG=lts" >> .env
 fi
-cat .env
 project_path=$(pwd)
 cd ..
 git clone https://github.com/bennyrottenberg/jenkins_configuration
