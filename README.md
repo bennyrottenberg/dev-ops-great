@@ -1,4 +1,4 @@
-Hello Aurora Labs!       
+#Hello Aurora Labs!       
 
 The script "start_system.sh" on the root level will create a Jenkins server with python_ssh_node connnected to master, both running in container. There are 2 jobs in this Jenkins:
 1.	DevOps-is-great - this is a job that runs the python script.
