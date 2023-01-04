@@ -8,7 +8,7 @@ Please note that this script creates one folder outside the repository scope. (O
 
 ## How to run it.
 
-Run "sh start_system. sh" and you ready to go.
+Run "sh start_system. sh" and you ready to go,
 You may need sudo permission.
 
 jenkins user/pswd
