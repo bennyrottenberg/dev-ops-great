@@ -5,7 +5,7 @@ pipeline {
     }
   }
   stages {
-    stage('run puthon script') {
+    stage('run python script') {
       steps {
         script{
           sh "python main.py"
